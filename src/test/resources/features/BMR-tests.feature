@@ -5,11 +5,12 @@ Functionaliteit: validatie van vaccinaties
     Scenario: dummy
         Gegeven een client geboren op 2020-01-01
         En de volgende vaccinaties zijn gegeven voor deze client:
-            | VaccinSoort | Uitvoerdatum | Product | Expiratiedatum | toelichting          |
-            | BMR         | 2020-02-02   | null    | 2025-01-01     | te jong              |
-            | BMR         | 2020-12-30   | null    | 2025-01-01     | Geldig, rangnummer 0 |
-            | BMR         | 2021-01-01   | null    | 2025-01-01     | interval te krap     |
-            | BMR         | 2021-02-01   | null    | 2025-01-01     | Geldig, rangnummer 1 |
-            | B           | 2021-03-01   | null    | 2025-01-01     | Geldig, rangnummer 2 |
+            | VaccinSoort | Uitvoerdatum | Product | Expiratiedatum | toelichting |
+            # | BMR         | 2020-02-02   | null    | 2025-01-01     | te jong              |
+            # | BMR         | 2020-12-30   | null    | 2025-01-01     | Geldig, rangnummer 0 |
+            # | BMR         | 2021-01-01   | null    | 2025-01-01     | interval te krap     |
+            # | BMR         | 2021-02-01   | null    | 2025-01-01     | Geldig, rangnummer 1 |
+            # | B           | 2021-03-01   | null    | 2025-01-01     | Geldig, rangnummer 2 |
+            | PNEU        | 2025-01-01   | null    | 2025-01-01     | PNEU geval  |
         Als deze vaccinaties worden gevalideerd
-        Dan verwacht ik 13 vaccinatiecomponenten
+        Dan verwacht ik 14 vaccinatiecomponenten
